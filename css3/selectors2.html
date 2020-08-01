@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: justify;
+            font-size: x-large;
+        }
+
+        p::first-line {
+            color: mediumvioletred;
+        }
+
+        p::selection {
+            color: olivedrab;
+            background: yellow;
+        }
+
+        p::after {
+            content: "QQQ";
+            color: red;
+        }
+
+        p::before {
+            content: "***";
+            background: rebeccapurple;
+        }
+
+        a:hover {
+            color: rgb(110, 225, 65);
+        }
+
+        a:active {
+            color: mediumturquoise;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        img[title="iki"] {
+            border: 5px;
+            border-style: outset;
+            border-color: rgb(110, 225, 65);
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tempora facilis quisquam, dicta possimus
+        recusandae consectetur. Voluptatem delectus vitae impedit maiores praesentium molestiae molestias quibusdam
+        consequuntur quaerat. Officiis, explicabo assumenda?
+    </p>
+    Deneme 123
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla optio, officia architecto ex voluptatum pariatur
+        fugiat nihil eaque error quasi voluptates illo corporis. Explicabo at est ut molestiae laudantium commodi.
+    </p>
+    <a href="#">MMMMMMM</a>
+    <br>
+    <img src="r1.jpg" alt="">
+    <img src="r2.jpg" title="iki" alt="">
+    <img src="r3.jpg" alt="">
+
+</body>
+
+</html>
