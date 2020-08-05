@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        var car = {
+            type: "Fiat ",
+            model: "500 ",
+            color: "white "
+        };
+
+        document.write(car.type, car.model, car.color);
+        document.writeln("<br>");
+        document.writeln(car.type.length);
+        document.writeln("<br>");
+        document.writeln(car.color.toUpperCase());
+        document.writeln("<br>");
+        */
+
+        function insan(isim, yas, gozRengi) {
+            this.isim = isim;
+            this.yas = yas;
+            this.gozRengi = gozRengi;
+
+            this.isimDegisitir = isimDegisitir;
+            //this.isimDegisitir = function (yisim) {
+            //    this.isim = yisim;
+            //}
+        }
+
+        function isimDegisitir(yisim) {
+            this.isim = yisim;
+        }
+        var i1 = new insan("Murat", 24, "Sarı");
+
+        document.writeln(i1.isim);
+        document.writeln(i1["yas"]);
+        i1.isimDegisitir("Veli");
+        document.writeln("<br>");
+        document.writeln(i1.isim);
+
+    </script>
+</body>
+
+</html>
