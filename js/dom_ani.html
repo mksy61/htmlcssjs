@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bKutu {
+            width: 300px;
+            height: 300px;
+            background-color: rebeccapurple;
+            border: 1px solid rebeccapurple;
+            position: relative;
+        }
+
+        #kKutu {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            position: absolute;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bKutu">
+        <div id="kKutu">
+
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            var pX = 0;
+            var pY = 0;
+            var kKutu = document.getElementById("kKutu");
+            var zaman = setInterval(hareketEt, 50);
+
+            function hareketEt() {
+                if (pX >= 250) {
+                    pY++;
+                    kKutu.style.top = pY + "px";
+                }
+                else {
+                    pX++;
+                    kKutu.style.left = pX + "px";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

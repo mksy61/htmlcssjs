@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    <div id="d1" class="c1">
+
+    </div>
+
+    <div id="d1" class="c1">
+
+    </div>
+    -->
+    <script>
+        //document.getElementById("d1").innerHTML = "<p>Murat Aksoy</p>";
+        //document.getElementsByClassName("c1")[0].innerHTML = "<p>Murat Aksoy 111</p>";
+        //document.getElementsByClassName("c1")[1].innerHTML = "<p>Murat Aksoy 222</p>";
+        /*
+        divSayisi = (document.getElementsByTagName("div")).length;
+        divler = document.getElementsByTagName("div");
+        for (var i = 0; i < divSayisi; i++) {
+            divler[i].innerHTML = "Div--> " + i;
+        }
+        */
+
+        var bdy = document.body;
+        for (var i = 0; i < 4; i++) {
+            bdy.innerHTML += "<p></p>";
+        }
+
+        var bdychild = bdy.childNodes;
+        for (var i = 1; i < bdychild.length; i++) {
+            bdychild[i].innerHTML = "A" + i;
+        }
+
+    </script>
+</body>
+
+</html>

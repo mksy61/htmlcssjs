@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="logo" src="r1.jpg" alt="">
+
+    <button onclick="logoDegistir()">Resmi Değiştir</button>
+    <script>
+        function logoDegistir() {
+            var logo = document.getElementById("logo");
+            logo.src = "r3.jpg";
+            logo.title = "AAAAAA"
+        }
+
+    </script>
+</body>
+
+</html>

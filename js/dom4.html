@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: blueviolet;
+            text-align: center;
+            font-size: 32px;
+            border: 2px solid black;
+            width: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="p1" onclick="degistir()">*** Murat Aksoy ***</p>
+
+    <script>
+        function degistir() {
+            var prg = document.getElementsByClassName("p1")[0];
+            prg.style.color = "green";
+            prg.style.width = "50%";
+            prg.style.backgroundColor = "red";
+            prg.style.textAlign = "left";
+        }
+
+    </script>
+</body>
+
+</html>
