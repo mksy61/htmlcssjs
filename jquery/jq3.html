@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous">
+        </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="p1">Paragraf 1</p>
+    <p class="p2">Paragraf 2</p>
+    <p class="p3">Paragraf 3</p>
+
+    <script>
+        $("p:nth-child(1)").html("Paragraf 111".toLocaleUpperCase());
+        $(".p2").html("Paragraf 222".toLocaleLowerCase());
+        $("p:last").html("BBB");
+    </script>
+</body>
+
+</html>

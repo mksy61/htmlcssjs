@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous">
+        </script>
+    <style>
+        .renk1 {
+            color: rgb(127, 219, 255);
+        }
+
+        .renk2 {
+            color: rgb(8, 207, 35);
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p>
+            Bir iki üç tığ İş
+        </p>
+    </div>
+
+    <script>
+        var divTextContent = $("div").text();
+        var bText = divTextContent.trim().toLocaleUpperCase();
+        $("div p").html(bText).append("<b><--Büyük Harf oldu</b>").prepend("-->");
+        $("div p").after("<h2>Deneme</h2>");
+        $("div p").addClass("renk1");
+        $("h2").addClass("renk2");
+        $("div").css("background-color", "green");
+    </script>
+</body>
+
+</html>
